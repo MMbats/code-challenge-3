@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDHAUS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&display=swap" 
+      rel="stylesheet" 
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/Edhaus.png" alt="Edhaus Logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">RESEARCH</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>EDHAUS KENYA</h1>
+        <p>
+          Welcome to EDHAUS KENYA, where we craft innovative, sustainable architectural designs that blend creativity, functionality, and a deep respect for the environment and culture.
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="services">
+      <h1>Services</h1>
+      <p>
+        At EDHAUS KENYA, we pride ourselves on delivering exceptional architectural services tailored to each client’s vision. Combining innovation, precision, and attention to detail, we create stunning, functional spaces while ensuring a seamless, client-focused experience.
+      </p>
+      <div class="row">
+        <div class="services-col">
+          <h3>Architectural Design</h3>
+          <p>
+            Custom design for residential, commercial, and industrial projects. 3D modeling and rendering to visualize concepts before construction.
+          </p>
+        </div>
+        <div class="services-col">
+          <h3>Urban Planning and Development</h3>
+          <p>
+            Designing sustainable urban spaces and infrastructure. Offering solutions for community-based projects and large-scale developments.
+          </p>
+        </div>
+        <div class="services-col">
+          <h3>Interior Design</h3>
+          <p>
+            Creating functional, beautiful interiors for homes, offices, and retail spaces. Selection of materials, colors, and finishes to suit client preferences.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="services-col">
+          <h3>Project Management</h3>
+          <p>
+            Overseeing the construction process from design to completion. Ensuring timely delivery and budget management.
+          </p>
+        </div>
+        <div class="services-col">
+          <h3>Sustainable Design</h3>
+          <p>
+            Incorporating eco-friendly practices, energy-efficient systems, and sustainable materials into projects. Designing structures that align with green building standards.
+          </p>
+        </div>
+        <div class="services-col">
+          <h3>Renovation and Remodeling</h3>
+          <p>
+            Transforming old or outdated buildings into modern, functional spaces. Restoring heritage buildings while maintaining their cultural significance.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="services-col">
+          <h3>Landscape Architecture</h3>
+          <p>
+            Designing gardens, parks, and outdoor spaces that complement architectural structures.
+          </p>
+        </div>
+        <div class="services-col">
+          <h3>Consultancy Services</h3>
+          <p>
+            Providing professional advice on building codes, zoning laws, and construction regulations.
+          </p>
+        </div>
+        <div class="services-col">
+          <h3>Structural Design</h3>
+          <p>
+            Developing safe and efficient structural frameworks for buildings. Ensuring designs meet the highest standards of stability and durability.
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!--Places-->
+
+<section class="places">
+
+        <h3>WHERE TO FIND US</h3>
+
+        <p>At EDHOUSE, we deliver innovative architectural solutions, focusing on sustainability and efficiency. Serving East Africa, including Uganda, Tanzania, and Kenya, we envision global expansion with pride.</p>    
+    
+        <div class="row">
+            <div class="places-col">
+                <img src="images/redd-francisco-9yWcy5B-haM-unsplash.jpg" >
+
+                <div class="layer">
+                    <h3>KENYA</h3>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="places-col">
+                <img src="images/buildings-5899086.jpg" >
+
+                <div class="layer">
+                    <h3>UGANDA</h3>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="places-col">
+                <img src="images/building-6915781.jpg" >
+
+                <div class="layer">
+                    <h3>TANZANIA</h3>
+
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+
+
+        
+
+        
+
+</section>
+
+
+
+
+
+
+
+
+    <!-- Javascript for toggle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+
+    font-optical-sizing: auto;
+  }
+  h1, h2, h3 {
+    font-family: "Lobster", cursive;
+}
+
+/* Body text */
+p, li {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Custom styles for emphasis */
+blockquote, em {
+    font-family: "Roboto Slab", serif;
+    font-style: italic;
+}
+
+  /* Header Section */
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/sand-dunes-7709400.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img {
+    width: 300px;
+    height: 150px;
+  }
+  
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: honeydew;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+  
+  .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .text-box h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: honeydew;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: honeydew;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hero-btn:hover {
+    border: 1px solid #7c83dd;
+    background: #7c83dd;
+    transition: 1s;
+  }
+  
+  nav .fa {
+    display: none;
+  }
+  
+  @media (max-width: 700px) {
+    nav .fa {
+      display: block; /* Show icons */
+      color: #fff; /* Adjust visibility */
+      font-size: 22px;
+      cursor: pointer;
+    }
+  
+    .nav-links {
+      position: absolute;
+      background: #0a1c25;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px; /* Initially hidden */
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+}
+       
+  /* Services Section */
+  .services {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 60px 0;
+    
+  }
+  
+  .services h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .services p {
+    color: #5a212a;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .services-col {
+    flex-basis: 30%;
+    background: #184b52;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+  }
+  
+  .services-col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .services-col h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #a79d6f;
+    margin-bottom: 10px;
+  }
+  
+  .services-col p {
+    font-size: 1.0em;
+    color: #b2e6d9;
+    line-height: 1.4;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 700px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .services-col {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  /*----places---*/    
+
+.places{
+    width: 90%; 
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 0
+
+}
+.places-col{
+    flex-basis: 30%; 
+    max-width: 300px; 
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.places-col img{
+    width: 100%; /* Ensure the image fully fills the container */
+
+
+}
+.layer{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:rgba(80, 59, 3, 0.7) ;
+}
+
+
+
+
+
+
+
+
+  
